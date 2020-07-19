@@ -11,22 +11,29 @@ class Traveler {
        return this.food = this.food + 2
     }
     eat() {
-        if(this.food > 1) {
-            this.food = this.food -1
-            
-            return
-        }
-   
-        if(this.food === 1) {
+        if(this.food >= 1) {
             this.food = this.food - 1
-            
             return
-        }
-
-        if(this.food === 0) {
+        } else {
             this.isHealthy = false
             return
         }
+        // if(this.food > 1) {
+        //     this.food = this.food -1
+            
+        //     return
+        // }
+   
+        // if(this.food === 1) {
+        //     this.food = this.food - 1
+            
+        //     return
+        // }
+
+        // if(this.food === 0) {
+        //     this.isHealthy = false
+        //     return
+        // }
     }
 
 } 
